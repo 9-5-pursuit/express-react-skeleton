@@ -7,13 +7,14 @@ let exampleModel = require('../models/example.model');
 console.log(exampleModel);
 
 // GET
-router.get('/:id', (req, res) => {
-    // Controller logic to get a single item
-});
-
 router.get('/', (req, res) => {
     // Controller logic to get all items
     res.status(200).send(exampleModel);
+});
+
+// SHOW
+router.get('/:id', (req, res) => {
+    // Controller logic to get a single item
 });
 
 // POST
